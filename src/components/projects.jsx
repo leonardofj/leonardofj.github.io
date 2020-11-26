@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ProjectBox from './projectbox'
 
 export default class Projects extends Component {
 	render() {
@@ -13,74 +14,27 @@ export default class Projects extends Component {
 							</div>
 						</div>
 						<div className="row row-pt-md">
-							<div className="col-md-4 text-center animate-box">
-								<div className="services color-1">
-									<span className="icon">
-										<i className="icon-bulb" />
-									</span>
-									<div className="desc">
-										<h3><a href="https://leonardofj.github.io/tic-tac-toe-react/" target="_blank">Tic Tac Toe</a></h3>
-										<p>Tic Tac Toe game built in React</p>
-									</div>
-								</div>
-							</div>
-							<div className="col-md-4 text-center animate-box">
-								<div className="services color-3">
-									<span className="icon">
-										<i className="icon-phone3" />
-									</span>
-									<div className="desc">
-										<h3>Data Structures</h3>
-										<p>As coming from the CS background</p>
-									</div>
-								</div>
-							</div>
-							<div className="col-md-4 text-center animate-box">
-								<div className="services color-5">
-									<span className="icon">
-										<i className="icon-data" />
-									</span>
-									<div className="desc">
-										<h3>Dev Ops</h3>
-										<p>I am pursuing my internship</p>
-									</div>
-								</div>
-							</div>
-							{/*
-			  <div className="col-md-4 text-center animate-box">
-				  <div className="services color-2">
-				  <span className="icon">
-					  <i className="icon-data" />
-				  </span>
-				  <div className="desc">
-					  <h3>Dev Ops</h3>
-					  <p>Jenkins , Kubernetes , Docker </p>
-				  </div>
-				  </div>
-			  </div>
-			  <div className="col-md-4 text-center animate-box">
-				  <div className="services color-4">
-				  <span className="icon">
-					  <i className="icon-layers2" />
-				  </span>
-				  <div className="desc">
-					  <h3>Graphic Design</h3>
-					  <p>My friend knows .. P</p>
-				  </div>
-				  </div>
-			  </div>
-			  <div className="col-md-4 text-center animate-box">
-				  <div className="services color-6">
-				  <span className="icon">
-					  <i className="icon-phone3" />
-				  </span>
-				  <div className="desc">
-					  <h3>Digital Marketing</h3>
-					  <p>I use Instagram eight hours a day :) </p>
-				  </div>
-				  </div>
-			  </div>
-			  */}
+							<ProjectBox
+								color="services color-1"
+								icon="icon-bulb"
+								title='Tic Tac Toe'
+								link="https://leonardofj.github.io/tic-tac-toe-react/"
+								text='Tic Tac Toe game built in React'
+							/>
+							<ProjectBox
+								color="services color-3"
+								icon="icon-phone3"
+								title="Data Structures"
+								link="#"
+								text="As coming from the CS background"
+							/>
+							<ProjectBox
+								color="services color-5"
+								icon="icon-data"
+								title="Dev Ops"
+								link="#"
+								text="I am pursuing my internship"
+							/>
 						</div>
 					</div>
 				</section>
