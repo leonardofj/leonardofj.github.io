@@ -16,24 +16,24 @@ export default class Projects extends Component {
 						<div className="row row-pt-md">
 							<ProjectBox
 								color="services color-1"
-								icon="icon-bulb"
+								icon="GiTicTacToe"
 								title='Tic Tac Toe'
 								link="https://leonardofj.github.io/tic-tac-toe-react/"
 								text='Tic Tac Toe game built in React'
 							/>
 							<ProjectBox
 								color="services color-3"
-								icon="icon-phone3"
-								title="Data Structures"
-								link="#"
-								text="As coming from the CS background"
+								icon="MdTranslate"
+								title="Anime Learning"
+								link="https://animelearning.wordpress.com#"
+								text="Learning japanese through animes!"
 							/>
 							<ProjectBox
 								color="services color-5"
-								icon="icon-data"
-								title="Dev Ops"
+								icon=""
+								title="Next Project"
 								link="#"
-								text="I am pursuing my internship"
+								text="What's next?"
 							/>
 						</div>
 					</div>
