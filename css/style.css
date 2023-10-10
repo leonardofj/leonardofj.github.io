@@ -12,6 +12,11 @@ body {
 .logo {
     margin: auto 20px;
     text-decoration: none;
+    display: flex;
+}
+
+.icon {
+    height: 25px;
 }
 
 h2 {
