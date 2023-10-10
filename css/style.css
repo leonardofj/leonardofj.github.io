@@ -92,6 +92,11 @@ h3 {
     text-decoration: none;
 }
 
+.soc-med-icon:hover {
+    color: #ffba08;
+    background: #660000;
+}
+
 
 .footer {
     background: #00243d;
