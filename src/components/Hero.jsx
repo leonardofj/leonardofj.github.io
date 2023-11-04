@@ -37,7 +37,7 @@ export default function Hero() {
             </a>
           </div>
           <br />
-          <h3>More coming soon...</h3>
+          <h3>More coming soon!</h3>
         </div>
       </div>
     </>
