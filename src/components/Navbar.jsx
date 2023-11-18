@@ -11,12 +11,8 @@ export default function Navbar() {
         </a>
         <ul class="links">
           <il>
-            <a
-              href="files/Leonardo de Jesus.pdf"
-              download="Leonardo de Jesus.pdf"
-              target="_blank"
-            >
-              <button type="button">Download CV</button>
+            <a href="/cv">
+              <button type="button">Go to my CV</button>
             </a>
           </il>
         </ul>
