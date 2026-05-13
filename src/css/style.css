@@ -93,10 +93,12 @@ a.cv-link:hover {
 h1 {
   color: #3891a6;
   text-align: left;
-  font:
-    600 64px "Poppins",
-    sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.65rem, 2.6vw + 1rem, 4rem);
+  line-height: 1.1;
   margin: 0;
+  white-space: nowrap;
 }
 
 .hero-subtitle {
@@ -148,6 +150,26 @@ h1 {
 .soc-med-icon:hover {
   color: #ffba08;
   background: #660000;
+}
+
+@media (max-width: 899.98px) {
+  .about {
+    text-align: center;
+  }
+
+  .about h1,
+  .about .hero-subtitle,
+  .about .hero-teaser {
+    text-align: center;
+  }
+
+  .about .soc-med {
+    justify-content: center;
+  }
+
+  .about .soc-med-icon:last-child {
+    margin-right: 0;
+  }
 }
 
 .footer {
