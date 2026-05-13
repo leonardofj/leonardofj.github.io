@@ -1,11 +1,13 @@
 import "../css/style.css";
 
 export default function Footer() {
+  const year = new Date().getFullYear();
+
   return (
-    <>
-      <div class="footer">
-        <h3 class="copyright">COPYRIGHT © 2023 Leonardo de Jesus</h3>
-      </div>
-    </>
+    <footer className="footer">
+      <p className="copyright">
+        COPYRIGHT © {year} Leonardo de Jesus
+      </p>
+    </footer>
   );
 }

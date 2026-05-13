@@ -3,20 +3,20 @@ import Favicon from "../img/favicon.ico";
 
 export default function Navbar() {
   return (
-    <>
-      <div class="navbar">
-        <a class="logo" href="index.html">
-          <img class="icon" src={Favicon} alt="gears icon" />
-          <h2>LEO</h2>
-        </a>
-        <ul class="links">
-          <il>
-            <a href="/cv">
-              <button type="button">Go to my CV</button>
+    <header className="navbar">
+      <a className="logo" href="/">
+        <img className="icon" src={Favicon} alt="" />
+        <span className="logo-title">LEO</span>
+      </a>
+      <nav className="links" aria-label="Primary">
+        <ul className="links-list">
+          <li>
+            <a className="cv-link" href="/cv">
+              Go to my CV
             </a>
-          </il>
+          </li>
         </ul>
-      </div>
-    </>
+      </nav>
+    </header>
   );
 }
