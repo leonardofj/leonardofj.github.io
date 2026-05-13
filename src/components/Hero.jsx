@@ -1,31 +1,40 @@
 import ProfilePic from "../img/viking.jpg";
 import "../css/style.css";
+import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
-import Grid from "@mui/material/Unstable_Grid2";
+import Stack from "@mui/material/Stack";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function Hero() {
   return (
-    <Grid
-      container
+    <Stack
+      component="section"
+      aria-labelledby="hero-heading"
+      direction={{ xs: "column", md: "row" }}
+      spacing={{ xs: 3, md: 6 }}
       justifyContent="center"
-      rowSpacing={1}
-      columnSpacing={{ md: 6 }}
-      disableEqualOverflow
+      alignItems="center"
       sx={{ margin: "60px 0" }}
     >
-      <Grid item>
+      <Box sx={{ flexShrink: 0, textAlign: "center" }}>
         <img
           className="picture"
           src={ProfilePic}
           alt="Portrait of Leonardo de Jesus"
         />
-      </Grid>
-      <Grid item>
-        <Container className="about">
-          <h1>Leonardo de Jesus</h1>
+      </Box>
+      <Box
+        sx={{
+          flex: "0 1 auto",
+          minWidth: 0,
+          maxWidth: { xs: "100%", md: 640 },
+          width: { xs: "100%", md: "auto" },
+        }}
+      >
+        <Container maxWidth={false} className="about" disableGutters>
+          <h1 id="hero-heading">Leonardo de Jesus</h1>
           <p className="hero-subtitle">Software Engineer</p>
           <p className="hero-subtitle">Berlin, Germany</p>
           <div className="soc-med">
@@ -57,7 +66,7 @@ export default function Hero() {
           </div>
           <p className="hero-teaser">More coming soon!</p>
         </Container>
-      </Grid>
-    </Grid>
+      </Box>
+    </Stack>
   );
 }
