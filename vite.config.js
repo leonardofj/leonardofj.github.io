@@ -6,4 +6,10 @@ export default defineConfig({
   plugins: [react()],
   // User site (this repo): keep default base "/".
   // Project Pages (e.g. username.github.io/repo-name/) set: base: "/repo-name/"
+  test: {
+    environment: "jsdom",
+    setupFiles: "./src/test/setup.js",
+    css: true,
+    include: ["src/**/*.{test,spec}.{js,jsx}"],
+  },
 });
